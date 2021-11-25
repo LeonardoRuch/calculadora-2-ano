@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora Segundex</title>
+    <title>calculadora ponto e reta</title>
     <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/calculadora.css">
+    <link rel="stylesheet" href="css/distanciapontoereta.css">
 </head>
+
 <body>
-    
+
     <nav>
         <a href="index.html">Clássica</a>
         <a href="equacaoDoisPontos.html">Equações Dois Pontos</a>
@@ -16,7 +20,32 @@
         <a href="equacaoReduzida.html">Equação Reduzida</a>
         <a href="posicaoRelativaRetas.html">Posição Relativa das Retas</a>
     </nav>
+    <div class="calculadora">
+        <input type="text" disabled class="display" id="display">
 
-    <h1>Distância entre ponto e reta</h1>
+        <div class="pontos">
+            <label>Ponto</label>
+            <div><span>X:</span><input type="number" class="ponto" id="xP"></div>
+            <div><span>Y:</span><input type="number" class="ponto" id="yP"></div>
+        </div>
+
+        <div class="equacao">
+            <label>Equação</label>
+            <div><span>A:</span><input type="number" class="ponto" id="aP"></div>
+            <div><span>B:</span><input type="number" class="ponto" id="bP"></div>
+            <div><span>C:</span><input type="number" class="ponto" id="cP"></div>
+        </div>
+
+        <div class="primeiralinha">
+            <button onclick="limpar()">LIMPAR</button>
+        </div>
+        <div class="primeiralinha">
+            <button onclick="calc()">DISTÂNCIA</button>
+            
+        </div>
+    </div>  
+    <script src="javascript/distanciapontoereta.js"></script>
+
 </body>
+
 </html>

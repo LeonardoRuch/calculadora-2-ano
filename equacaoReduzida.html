@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora Segundex</title>
+    <title>Calculadora reduzida</title>
     <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/calculadora.css">
+    <link rel="stylesheet" href="css/equacaoreduzida.css">
 </head>
 <body>
     
@@ -17,7 +19,29 @@
         <a href="posicaoRelativaRetas.html">Posição Relativa das Retas</a>
     </nav>
 
-    <h1>Equação Reduzida</h1>
+    <div class="calculadora">
+        <input type="text" disabled class="display" id="display">
 
+        <div class="pontos">
+            <label>Ponto</label>
+            <div><span>X:</span><input type="number" class="ponto" id="xP"></div>
+            <div><span>Y:</span><input type="number" class="ponto" id="yP"></div>
+        </div>
+
+        <div class="equacao">
+            <label>Coeficiente Angular</label>
+            <div><span></span><input type="number" class="ponto" id="eP"></div>
+        </div>
+
+        <div class="primeiralinha">
+            <button onclick="limpar()">LIMPAR</button>
+        </div>
+        <div class="primeiralinha">
+            <button onclick="calc()">EQUAÇÃO REDUZIDA</button>
+            
+        </div>
+    </div>
+
+    <script src="javascript/equacaoreduzida.js"></script>
 </body>
 </html>
